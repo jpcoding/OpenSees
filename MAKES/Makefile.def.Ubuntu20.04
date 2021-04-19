@@ -27,12 +27,15 @@
 # sudo apt-get install emacs
 # sudo apt-get install build-essential
 # sudo apt-get install gfortran
-# wget https://prdownloads.sourceforge.net/tcl/tcl8.6.10-src.tar.gz
-# tar zxBf tcl8.6.tar.gz
-# cd tcl8.6.10/unix
-# configure --prefix=$HOME/tcl8.6 --enable-static --disable-shared --enable-64bit
-# make
-# make install
+# sudo apt install tcl
+# sudo apt install tcl-dev
+# ignore the follwing 6 lines if you choose to use ubutnu apt tcl
+# --wget https://prdownloads.sourceforge.net/tcl/tcl8.6.10-src.tar.gz
+# --tar zxBf tcl8.6.tar.gz
+# --cd tcl8.6.10/unix
+# --configure --prefix=$HOME/tcl8.6 --enable-static --disable-shared --enable-64bit
+# --make
+# --make install
 # cd $HOME
 # git clone https://github.com/OpenSees/OpenSees.git
 # cd OpenSees
