@@ -115,7 +115,8 @@ UMFPACK_LIBRARY = $(HOME)/lib/libUmfpack.a
 METIS_LIBRARY   = $(HOME)/lib/libMetis.a
 CSPARSE_LIBRARY   = $(HOME)/lib/libCSparse.a
 
-TCL_LIBRARY = $(HOME)/tcl8.6/lib/libtcl8.6.a
+#TCL_LIBRARY = $(HOME)/tcl8.6/lib/libtcl8.6.a
+TCL_LIBRARY = /usr/lib/x86_64-linux-gnu/libtcl8.6.so
 
 BLITZ_LIBRARY = $(HOME)/blitz/lib/libblitz.a
 GRAPHIC_LIBRARY     = 
@@ -268,15 +269,9 @@ MACHINE_INCLUDES        = -I/usr/include \
 include $(FE)/Makefile.incl
 
 #TCL_INCLUDES = -I/usr/includes/tcl-private/generic
-TCL_INCLUDES = -I$(HOME)/tcl8.6/include
+#TCL_INCLUDES = -I$(HOME)/tcl8.6/include
+TCL_INCLUDES = -I/usr/include/tcl8.6
+
 PYTHON_INCLUDES = -I/usr/include/python3.5
 
-INCLUDES = $(TCL_INCLUDES) $(FE_INCLUDES) $(MACHINE_INCLUDES) $(PYTHON_INCLUDES)
-
-
-
-
-
-
-
-
+INCLUDES = $(TCL_INCLUDES) $(FE_INCLUDES) $(MACHINE_INCLUDES) $(PYTHON_INCL
